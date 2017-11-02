@@ -74,7 +74,7 @@ func SetupServer() (*server.Server, error) {
 		config.Current.Mode = config.ModeProduction
 	}
 
-	// Call the app to perform additional setup
+	// Call the app to perform additional setup like mail, assets, views, auth and routes
 	app.Setup()
 
 	return s, nil
